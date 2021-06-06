@@ -869,11 +869,11 @@ endif
 "              SetTeXOptions() function in main.vim
 function! Tex_SetFastEnvironmentMaps()
 	if g:Tex_PromptedEnvironments != ''
-		call Tex_MakeMap("<F5>", "<Plug>Tex_FastEnvironmentInsert", 'i', '<silent> <buffer>')
-		call Tex_MakeMap("<F5>", "<Plug>Tex_FastEnvironmentInsert", 'n', '<silent> <buffer>')
-		call Tex_MakeMap("<F5>", "<Plug>Tex_FastEnvironmentInsert", 'v', '<silent> <buffer>')
-		call Tex_MakeMap("<S-F5>", "<Plug>Tex_FastEnvironmentChange", 'i', '<silent> <buffer>')
-		call Tex_MakeMap("<S-F5>", "<Plug>Tex_FastEnvironmentChange", 'n', '<silent> <buffer>')
+		call Tex_MakeMap("<C-A>", "<Plug>Tex_FastEnvironmentInsert", 'i', '<silent> <buffer>')
+		call Tex_MakeMap("<C-A>", "<Plug>Tex_FastEnvironmentInsert", 'n', '<silent> <buffer>')
+		call Tex_MakeMap("<C-A>", "<Plug>Tex_FastEnvironmentInsert", 'v', '<silent> <buffer>')
+		call Tex_MakeMap("<S-C-A>", "<Plug>Tex_FastEnvironmentChange", 'i', '<silent> <buffer>')
+		call Tex_MakeMap("<S-C-A>", "<Plug>Tex_FastEnvironmentChange", 'n', '<silent> <buffer>')
 	endif
 	if g:Tex_HotKeyMappings != ''
 		call s:SetUpHotKeys()
